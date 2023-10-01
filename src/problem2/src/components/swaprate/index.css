@@ -1,0 +1,22 @@
+.swaprate-result{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.swaprate-result div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+    padding: 16px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+}
+
+.swaprate-result div span{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 8px;
+}

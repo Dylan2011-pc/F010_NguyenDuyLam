@@ -1,0 +1,108 @@
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.swap-form{
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.34) 0px 2px 10px;
+  padding: 24px;
+}
+
+/* input and label */
+.input-container{
+	position:relative;
+	margin-bottom:40px;
+}
+.input-container label{
+	position:absolute;
+	top:5px;
+	left:0px;
+	font-size:20px;
+	color:black;	
+    pointer-event:none;
+	transition: all 0.2s ease-in-out;
+}
+.input-container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:20px;
+  color: black;
+}
+.input-container input:focus,
+.input-container input:valid{ 
+  border:none;	
+  outline:none;
+  border-bottom:1px solid green;	
+ }
+
+.input-container input:invalid{ 
+ border:none;	
+ outline:none;
+ border-bottom:1px solid #e74c3c;	
+}
+.input-container input ~ label{
+	top:-15px;
+  font-size: 14px;
+}
+
+/* Error massage */
+.input-container.error input{
+  border-color: #e74c3c;	
+}
+
+.error-message{
+  color: #e74c3c;
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+/* submit button */
+
+/* CSS */
+.submit-button {
+  background-color: #111827;
+  border: 0;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: .875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  float: right;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #26282c;
+}
+
+.submit-button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.submit-button:focus-visible {
+  box-shadow: none;
+}
+
+.submit-button:disabled{
+  background-color: #555;
+  cursor: not-allowed;
+}
+
